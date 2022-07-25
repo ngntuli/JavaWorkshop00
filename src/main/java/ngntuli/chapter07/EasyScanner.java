@@ -3,6 +3,13 @@ package main.java.ngntuli.chapter07;
 import java.util.Scanner;
 
 public class EasyScanner {
+
+	public static byte nextByte() {
+		Scanner sc = new Scanner(System.in);
+		byte b = sc.nextByte();
+		return b;
+	}
+
 	public static int nextInt() {
 		Scanner sc = new Scanner(System.in);
 		int i = sc.nextInt();
