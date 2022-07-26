@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class EasyScanner {
 
-	public static byte nextByte() {
-		Scanner sc = new Scanner(System.in);
+    public static byte nextByte() {
+        Scanner sc = new Scanner(System.in);
         byte b = sc.nextByte();
         return b;
     }
@@ -31,12 +31,12 @@ public class EasyScanner {
     public static String nextString() {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-		return s;
-	}
+        return s;
+    }
 
-	public static char nextChar() {
-		Scanner sc = new Scanner(System.in);
-		char c = sc.next().charAt(0);
-		return c;
-	}
+    public static char nextChar() {
+        Scanner sc = new Scanner(System.in);
+        char c = sc.next().charAt(0);
+        return c;
+    }
 }
