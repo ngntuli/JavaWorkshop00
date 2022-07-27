@@ -11,7 +11,12 @@ public class ExtendedOblongTester {
         ExtendedOblong extOblong = new ExtendedOblong(10.2, 5.3, symbol);
 
         System.out.println(extOblong.draw());
-        extOblong.setSymbol('+');
+
+        System.out.print("Enter a symbol: ");
+        symbol = EasyScanner.nextChar();
+
+        extOblong.setSymbol(symbol);
+
         System.out.println(extOblong.draw());
     }
 }
