@@ -1,7 +1,7 @@
 package main.java.ngntuli.chapter08;
 
 public class Sensor {
-    private double pressure;
+    protected double pressure;
 
     public Sensor() {
     }
