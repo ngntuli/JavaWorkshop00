@@ -7,6 +7,18 @@ public class CheckableCustomer extends Customer implements Checkable {
 
     @Override
     public boolean check() {
-        return false;
+        String id = getId();
+        char firsLetter = id.charAt(0);
+        if (id.length() < 4 || Character.isDigit(firsLetter)) {
+            return false;
+        }
+
+        for (int i = 1; i < id.length(); i++) {
+            char value = id.charAt(i);
+            if (Character.isLetter(value)) {
+                return false;
+            }
+        }
+        return true;
     }
 }
