@@ -1,8 +1,8 @@
 package main.java.ngntuli.chapter10;
 
 public class Customer {
-    private String name;
-    private String id;
+    private final String name;
+    private final String id;
     private double creditLimit;
 
     public Customer(String name, String id, double creditLimit) {
