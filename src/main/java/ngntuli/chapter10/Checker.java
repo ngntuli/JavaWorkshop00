@@ -23,4 +23,12 @@ public class Checker {
         System.out.println("account3 is " + checkValidity(customer3));
 
     }
+
+    private static String checkValidity(Checkable customer) {
+        if (customer.check()) {
+            return "valid";
+        } else {
+            return "invalid";
+        }
+    }
 }
