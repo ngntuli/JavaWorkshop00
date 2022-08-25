@@ -1,4 +1,4 @@
-package main.java.ngntuli.chapter10;
+package main.java.ngntuli.chapter13;
 
 public class Checker {
     public static void main(String[] args) {

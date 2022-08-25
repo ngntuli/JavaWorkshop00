@@ -1,4 +1,4 @@
-package main.java.ngntuli.chapter10;
+package main.java.ngntuli.chapter13;
 
 public class CheckableCustomer extends Customer implements Checkable {
     public CheckableCustomer(String name, String id, double creditLimit) {
