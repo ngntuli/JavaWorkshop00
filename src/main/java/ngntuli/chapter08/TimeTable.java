@@ -1,5 +1,7 @@
 package main.java.ngntuli.chapter08;
 
+import java.util.Optional;
+
 public class TimeTable {
     private final Booking[][] times;
 
