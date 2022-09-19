@@ -6,7 +6,12 @@ public class TimeTable {
     private final Booking[][] times;
 
     public TimeTable(int days, int periods) {
-        times = new Booking[days][periods];
+        if (days != 5 || periods != 7) {
+            throw new TimeTableException("Error: failed to create bookings list size days[" +
+                    days + "] and periods[" + periods + "]");
+        } else {
+            times = new Booking[days][periods];
+        }
     }
 
     public boolean makeBooking(int day, int period, Booking booking) {
