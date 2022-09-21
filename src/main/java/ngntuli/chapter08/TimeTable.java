@@ -17,7 +17,7 @@ public class TimeTable {
     public void makeBooking(int day, int period, Booking booking) {
         if (times[day - 1][period - 1] == null) {
             times[day - 1][period - 1] = booking;
-            return true;
+            System.out.println("Successful booked");
         } else {
             return false;
         }
