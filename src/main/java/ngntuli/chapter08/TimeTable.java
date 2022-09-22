@@ -19,7 +19,7 @@ public class TimeTable {
             times[day - 1][period - 1] = booking;
             System.out.println("Successful booked");
         } else {
-            return false;
+            throw new TimeTableException("Failed slot is booked");
         }
     }
 
