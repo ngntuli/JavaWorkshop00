@@ -23,7 +23,7 @@ public class TimeTable {
         }
     }
 
-    public boolean cancelBooking(int day, int period) {
+    public void cancelBooking(int day, int period) {
         if (times[day - 1][period - 1] != null) {
             times[day - 1][period - 1] = null;
             return true;
