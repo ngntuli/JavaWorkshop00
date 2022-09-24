@@ -26,7 +26,7 @@ public class TimeTable {
     public void cancelBooking(int day, int period) {
         if (times[day - 1][period - 1] != null) {
             times[day - 1][period - 1] = null;
-            return true;
+            System.out.println("Successful, booking is canceled");
         } else {
             return false;
         }
