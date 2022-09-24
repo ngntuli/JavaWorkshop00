@@ -28,7 +28,7 @@ public class TimeTable {
             times[day - 1][period - 1] = null;
             System.out.println("Successful, booking is canceled");
         } else {
-            return false;
+            throw new TimeTableException("Failed slot is empty");
         }
     }
 
