@@ -36,7 +36,7 @@ public class TimeTable {
         return times[day - 1][period - 1] == null;
     }
 
-    public Booking getBooking(int day, int period) {
+    public Optional<Booking> getBooking(int day, int period) {
         if (times[day - 1][period - 1] != null) {
             return times[day - 1][period - 1];
         } else {
