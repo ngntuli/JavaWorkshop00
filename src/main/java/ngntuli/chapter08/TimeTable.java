@@ -38,7 +38,7 @@ public class TimeTable {
 
     public Optional<Booking> getBooking(int day, int period) {
         if (times[day - 1][period - 1] != null) {
-            return times[day - 1][period - 1];
+            return Optional.of(times[day - 1][period - 1]);
         } else {
             return null;
         }
