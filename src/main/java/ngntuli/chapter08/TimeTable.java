@@ -40,7 +40,7 @@ public class TimeTable {
         if (times[day - 1][period - 1] != null) {
             return Optional.of(times[day - 1][period - 1]);
         } else {
-            return null;
+            return Optional.empty();
         }
     }
 
