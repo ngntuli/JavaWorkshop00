@@ -8,17 +8,7 @@ public class TimeTableTester {
         char reply;
 
         do {
-
-            System.out.println();
-            System.out.println("##########################");
-            System.out.println("[1] Add booking");
-            System.out.println("[2] Cancel booking");
-            System.out.println("[3] Check Free Slot");
-            System.out.println("[4] Get booking");
-            System.out.println("[5] Get number of days and periods");
-            System.out.println("[6] Quit");
-            System.out.println("##########################");
-            System.out.println();
+            menu();
             reply = EasyScanner.nextChar();
 
             switch (reply) {
