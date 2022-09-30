@@ -13,10 +13,10 @@ public class TimeTableTester {
 
             switch (reply) {
                 case '1':
-                    if (timeTable.makeBooking(enterDay(), enterPeriod(), booking())) {
-                        System.out.println("Successful booked");
-                    } else {
-                        System.out.println("Failed, slot is booked");
+                    try {
+                        timeTable.makeBooking(enterDay(), enterPeriod(), booking());
+                    } catch (TimeTableException e) {
+                        System.out.println(e.getMessage());
                     }
                     break;
                 case '2':
