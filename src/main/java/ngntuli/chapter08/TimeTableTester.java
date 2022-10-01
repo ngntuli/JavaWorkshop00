@@ -20,10 +20,10 @@ public class TimeTableTester {
                     }
                     break;
                 case '2':
-                    if (timeTable.cancelBooking(enterDay(), enterPeriod())) {
-                        System.out.println("Successful, booking is canceled");
-                    } else {
-                        System.out.println("Failed, slot is empty");
+                    try {
+                        timeTable.cancelBooking(enterDay(), enterPeriod());
+                    } catch (TimeTableException e) {
+                        System.out.println(e.getMessage());
                     }
                     break;
                 case '3':
