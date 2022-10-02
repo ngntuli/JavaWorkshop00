@@ -34,8 +34,7 @@ public class TimeTableTester {
                     }
                     break;
                 case '4':
-                    Booking booking = timeTable.getBooking(enterDay(), enterPeriod());
-                    if (booking != null) {
+                    timeTable.getBooking(enterDay(), enterPeriod()).ifPresentOrElse(booking -> {
                         System.out.println("Room number: " + booking.getNumber());
                         System.out.println("Lecture name: " + booking.getName());
                     } else {
