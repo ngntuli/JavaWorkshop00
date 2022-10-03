@@ -37,9 +37,8 @@ public class TimeTableTester {
                     timeTable.getBooking(enterDay(), enterPeriod()).ifPresentOrElse(booking -> {
                         System.out.println("Room number: " + booking.getNumber());
                         System.out.println("Lecture name: " + booking.getName());
-                    } else {
-                        System.out.println("No booking is available in this slot");
-                    }
+                    }, () -> System.err.println("No booking is available in this slot"));
+
                     break;
                 case '5':
                     System.out.println("Days " + timeTable.numberOfDays());
