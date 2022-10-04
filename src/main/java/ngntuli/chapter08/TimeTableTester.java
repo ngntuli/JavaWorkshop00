@@ -48,7 +48,7 @@ public class TimeTableTester {
                     System.out.println("Goodbye");
                     break;
                 default:
-                    System.out.println("Options [1-6]");
+                    System.err.println("Options [1-6]");
             }
         } while (reply != '6');
     }
