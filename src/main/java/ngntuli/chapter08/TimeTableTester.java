@@ -53,6 +53,19 @@ public class TimeTableTester {
         } while (reply != '6');
     }
 
+    private static void menu() {
+        System.out.println();
+        System.out.println("##########################");
+        System.out.println("[1] Add booking");
+        System.out.println("[2] Cancel booking");
+        System.out.println("[3] Check Free Slot");
+        System.out.println("[4] Get booking");
+        System.out.println("[5] Get number of days and periods");
+        System.out.println("[6] Quit");
+        System.out.println("##########################");
+        System.out.println();
+    }
+
     private static int enterDay() {
         System.out.print("Enter day: ");
         int day = EasyScanner.nextInt();
