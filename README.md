@@ -1,1 +1,1 @@
-# java-bootcamp-00
+# Java Workshop 00
